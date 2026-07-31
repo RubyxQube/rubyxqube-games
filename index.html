@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Anti-flash: set data-theme before first paint -->
+    <script>
+      (function(){
+        try{
+          var s=localStorage.getItem('color-scheme');
+          if(s==='light'||s==='dark'){document.documentElement.setAttribute('data-theme',s);return;}
+        }catch(e){}
+        document.documentElement.setAttribute('data-theme','dark');
+      })();
+    </script>
+
+    <meta name="description" content="RubyxQube Games — an indie game studio building Huff & Puff and a growing catalog of playful, mischievous multiplayer party games." />
+    <title>RubyxQube Games — Fairy tales, from the predator's side.</title>
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://games.rubyxqube.com/" />
+    <meta property="og:title"       content="RubyxQube Games — Fairy tales, from the predator's side." />
+    <meta property="og:description" content="An indie game studio building Huff & Puff and a growing catalog of playful, mischievous multiplayer party games." />
+    <meta property="og:image"       content="https://games.rubyxqube.com/brand/RubyxQube_horizontal_light.png" />
+
+    <link rel="canonical" href="https://games.rubyxqube.com/" />
+
+    <!-- Fonts: Fraunces (display) / Hanken Grotesk (body) / Space Mono (HUD) — deliberate deviation from the workspace default Plus Jakarta Sans, see DESIGN.md -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
